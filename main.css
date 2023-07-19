@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+form, input, select{
+    border: 1px solid #111;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label, legend{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.lineWrap{
+    display: flex;
+    align-items:center;
+}
+
+input[type="text"], select{
+    margin-left: 80px;
+    flex-grow: 1;
+}
+
+#collectionCards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card{
+    border: 1px solid #111;
+    padding: 15px;
+    border-radius: 5px;
+    height: 200px;
+    width: 350px;
+    display: flex;
+}
+
+.info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info button{
+    height: 25px;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+
+#filmInfo{
+    border: 1px solid #11111152;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+#content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.wrap{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.wrap label{
+    width: 192px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 20px;
+    border: 1px solid #11111152;
+    border-radius: 3px;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    visibility: hidden;
+}

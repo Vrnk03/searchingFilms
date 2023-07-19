@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <legend>Search:</legend>
+    <form action="" name="searchFilm">
+        
+        <div class="lineWrap">
+            <label for="Title">Title:</label>
+            <input type="text" name="titleChoice">
+        </div>
+
+        <div class="lineWrap">
+            <label for="Type">Type:</label>
+            <select name="typeChoice">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+        </div>
+
+        <input type="button" value="Search">
+    </form>
+
+    <div id="errorMessage"></div>
+
+    <div id="collectionCards"></div>
+
+    <div id="pagination" class="pagination"></div>
+
+    <div id="filmInfo">
+        <img src="" alt="">
+        <div id="content">
+            <div class="wrap">
+                <label for="">Title:</label>
+                <label for="" id="title"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Released:</label>
+                <label for="" id="released"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Genre:</label>
+                <label for="" id="genre"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Country:</label>
+                <label for="" id="country"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Director:</label>
+                <label for="" id="director"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Writer:</label>
+                <label for="" id="writer"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Actors:</label>
+                <label for="" id="actors"></label>
+            </div>
+            <br>
+            <div class="wrap">
+                <label for="">Awards:</label>
+                <label for="" id="awards"></label>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
