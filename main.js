@@ -100,7 +100,7 @@ function displayRes(movies)
 
         details.addEventListener('click', () => {
 
-            let url = 'http://www.omdbapi.com/?i=' + movie.imdbID + '&apikey=62d93a71';
+            let url = 'https://www.omdbapi.com/?i=' + movie.imdbID + '&apikey=62d93a71';
 
             sendRequest(url, function(error, data) {
                 if (error) 
