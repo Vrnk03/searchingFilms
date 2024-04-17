@@ -15,7 +15,7 @@ searchBtn.addEventListener("click", (event) => {
 
 function Search(title, type, offset = 0) { 
     let apiKey = "62d93a71";
-    let url = 'http://www.omdbapi.com/?s=' + encodeURIComponent(title) + '&type=' + type + '&apikey=' + apiKey + '&page=' + (Math.ceil(offset / 3) + 1); 
+    let url = 'https://www.omdbapi.com/?s=' + encodeURIComponent(title) + '&type=' + type + '&apikey=' + apiKey + '&page=' + (Math.ceil(offset / 3) + 1); 
 
     sendRequest(url, function(err, data) {
         if (err)
